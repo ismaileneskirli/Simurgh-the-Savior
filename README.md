@@ -26,11 +26,11 @@ Get as far as possible without dying you in order to save the planet are the las
 
 ## Features- In Priority :
 
-1- Camera Rail: Path through the level that the camera follows.
-2- Player Movement: Horizontal and vertical movement.
-3- Shooting: Player shoot bullets which do damage to opponent.
-4- Score: Points are given for killing enemies.
-5- Game Loop
+1. Camera Rail: Path through the level that the camera follows.
+2. Player Movement: Horizontal and vertical movement.
+3. Shooting: Player shoot bullets which do damage to opponent.
+4. Score: Points are given for killing enemies.
+5. Game Loop
 
 ## TODO Possible Upgrades :
 -  [ ] Multiple levels
