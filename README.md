@@ -6,7 +6,7 @@ You must save your planet. Simurgh is the latest technologie and hope of the hum
 
 If you wonder what Simurgh means and maybe not heard of it before check it's myth out.
 
-[I'm an inline-style link with title](https://symbolsage.com/what-is-simurgh-symbol/ "What Does the Simurgh Symbolize?")
+[What is Simurgh ?](https://symbolsage.com/what-is-simurgh-symbol/ "What Does the Simurgh Symbolize?")
 
 It basically stands for rebirth, life, healing. So get ready for not letting humanity down.
 
