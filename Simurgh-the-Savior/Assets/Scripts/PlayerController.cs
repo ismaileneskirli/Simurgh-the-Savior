@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     // vars for moving the player
     float xOffset ;
     float yOffset ;
+    float xThrow;
+    float yThrow;
     [SerializeField] float controlSpeed = 15f;
 
     //var for restricting player movement
@@ -19,8 +21,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 10f;
     [SerializeField] float controlRollFactor = -10f;
-    float xThrow;
-    float yThrow;
+
+    [SerializeField]  GameObject[] lasers;
     void Start()
     {
 
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessRotation()
@@ -75,4 +78,22 @@ public class PlayerController : MonoBehaviour
         transform.localPosition.z);
     }
 
+
+    void ProcessFiring(){
+            if(Input.GetButton("Fire1")){
+                FireLasers(true);
+            }
+            else {
+                FireLasers(false);
+            }
+    }
+
+
+    private void FireLasers(bool isActive)
+    {
+        foreach (GameObject laser in lasers){
+            var emission = laser.GetComponent<ParticleSystem>().emission;
+            emission.enabled = isActive;
+        }
+    }
 }
