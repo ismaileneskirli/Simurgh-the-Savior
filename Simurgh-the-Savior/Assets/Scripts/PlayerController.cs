@@ -10,16 +10,21 @@ public class PlayerController : MonoBehaviour
     float yOffset ;
     float xThrow;
     float yThrow;
-    [SerializeField] float controlSpeed = 15f;
+    [Header ("General Tuning Settings")]
+    [Tooltip("How fast ship moves up and down")] [SerializeField] float controlSpeed = 15f;
 
     //var for restricting player movement
-    [SerializeField] float xRange = 12f;
-    [SerializeField] float yRange = 2.5f;
+    [Tooltip("How fast ship moves horizontally")] [SerializeField] float xRange = 12f;
+    [Tooltip("How fast ship moves vertically")] [SerializeField] float yRange = 2.5f;
     // Start is called before the first frame update
     // pitch = eğim
+    [Header ("Screen Position based tuning")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField]float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 10f;
+
+    [Header ("Player input based tuning")]
+
+    [SerializeField]float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -10f;
 
     [SerializeField]  GameObject[] lasers;
