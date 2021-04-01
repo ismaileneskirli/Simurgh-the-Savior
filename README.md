@@ -32,7 +32,7 @@ Get as far as possible without dying you in order to save the planet are the las
 4. Score: Points are given for killing enemies.
 5. Game Loop
 
-## TODO Possible Upgrades :
+## TODO Possible Upgrades (maybe in the future):
 -  [ ] Multiple levels
 -  [ ] Player Shield
 -  [ ] Momentary invulnerability
